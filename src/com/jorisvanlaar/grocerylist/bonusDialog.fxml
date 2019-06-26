@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import com.jorisvanlaar.grocerylist.NumberTextField?>
+
+<DialogPane headerText="Enter your Bonus Card serial to receive &#10;a 10% discount on your groceries." xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jorisvanlaar.grocerylist.BonusController">
+    <content>
+        <GridPane hgap="10.0" vgap="10.0">
+            <Label text="Card serial: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <NumberTextField fx:id="bonusField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        </GridPane>
+    </content>
+</DialogPane>

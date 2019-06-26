@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import com.jorisvanlaar.grocerylist.NumberTextField?>
+
+<DialogPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jorisvanlaar.grocerylist.ProductController">
+    <headerText>
+        Fill in the information for the new Product
+    </headerText>
+    <content>
+        <GridPane hgap="10.0" vgap="10.0">
+            <Label text="Name: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="productNameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Type: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="productTypeBox" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Price: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <NumberTextField fx:id="productPriceField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        </GridPane>
+    </content>
+</DialogPane>
